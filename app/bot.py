@@ -1,10 +1,11 @@
 from aiogram import Dispatcher, Bot, types
 
-TOKEN = "1945118170:AAH4ZVOXOgEC8F3wDCB-rZ81817fynT7INk"
+from .config import TOKEN
+
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
 
 @dp.message_handler(commands="start")
 async def start(message: types.Message):
-    await message.answer(f"Salom, {message.from_user.full_name}")
+    await message.answer(f"Hi, {message.from_user.full_name}, chat id {message.from_user.id}")
