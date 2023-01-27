@@ -30,4 +30,4 @@ async def send_message(chatid: str, message: str):
 
 @app.on_event("shutdown")
 async def on_shutdown():
-    await tgbot.shutdown()
+    await tgbot.on_shutdown()
