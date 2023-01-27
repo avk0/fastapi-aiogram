@@ -26,5 +26,5 @@ async def send_message(chatid: str, message: str):
     await bot.send_message(chatid, message) # to get your chatid, start the app and send /start message to bot
 
 
-async def shutdown():
+async def on_shutdown():
     await bot.session.close()
