@@ -1,4 +1,6 @@
-# fastapi-aiogram
+## fastapi-aiogram - Telegram bot management via API service
+
+Used frameworks: [FastAPI](https://fastapi.tiangolo.com/), [aiogram](https://docs.aiogram.dev/en/latest/)
 
 To run:
 1. Create Telegram bot (with BotFather) and get bot token
